@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding-bottom: 50px;
+}
+.navbar-brand:hover{
+  color: black;
+}
+.container-plant {
+  max-width: 1380px; /* Adjust according to your design */
+  margin: 0 auto; /* Center the container */ /* Add some padding */
+  text-align: center;
+}
+h2{
+  color: black;
+  font-weight: 50px;
+}
+.pro{
+  background-color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+.pro:hover{
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  color: #2e6d4d; /* Greenish color */
+  margin-bottom: 20px;
+}
+.round_img_div{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.round_img_div img{
+  transition: transform 0.3s ease;
+}
+.round_img_div img:hover{
+  transform: scale(1.15);
+}
+.para{
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.navbars {
+  background-color: #2e6d4d; /* Greenish color for navbar */
+  padding: 25px; /* Add some padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.navbar-brand {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #fff; /* White color for text */
+  text-decoration: none;
+}
+
+.navbar-navs {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.navbar-navs li{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-navs li a{
+  text-decoration: none;
+}
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff; /* White color for text */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: black; /* Pink color on hover */
+  transform: scale(1.05);
+}
+
+.logout-btn,.create{
+  margin-right: 15px;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.logout-btn:hover {
+  background-color:black;
+  color: white;
+}
+.create:hover{
+  background-color:black;
+  color: white;
+}
+.img-div{
+  height: 80px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-container{
+  width: 25px;
+  height: 25px;
+}
+.reactions{
+  margin: 10px;
+  text-align: left;
+}
+.reactions a{
+  text-decoration: none;
+  margin-right: 5px;
+}
+i{
+  font-size: 35px;
+}
+.deck{
+  margin-top: 50px;
+}
+.add-to-cart-btn {
+  display: block;
+  margin-left: 20px;
+  width: 100%;
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 50px;
+  display: none;
+  transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  background-color: #ee4747;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.posts-container {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pro-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.post {
+  cursor: pointer;
+  width: 800px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+.post-image-div{
+  border: 1px solid black;
+  height: 550px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.post-image{
+  object-fit: cover;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+.profile-image {
+  width: 100%;
+  border-radius: 50%;
+  max-height: 300px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+/* Style for the Read more button */
+
+.post-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rs-option {
+  font-size: 16px;
+  color: #555;
+}
+
+
+.user_name{
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+.content{
+  font-weight: lighter;
+}
+.post_head{
+  text-align: left;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  /* padding: 10px; */
+  margin-top:20px ;
+}
+.like-count-container{
+  margin-right: 10px;
+}
+.commentbox{
+  display: none;
+  padding: 10px;
+}
+.comment{
+  display: flex;
+}
+.commentor{
+  font-weight: 900;
+  margin-right: 10px;
+}
+.bold{
+  font-weight: 900;
+  margin-top: 10px;
+}
+.comment-text {
+  font-size: 20px;
+  height: 30px;
+  width: 80%; 
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.all-comments-div{
+  margin-top: 20px;
+}
+.all-comments-div .comment{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.comment-text {
+  /* Add styling for the comment text field */
+  flex: 1; /* This allows the text field to grow and fill the available space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add some space between the text field and the share button */
+}
+.headp{
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.headp a{
+  color: #ee4747;
+text-decoration: none;
+}
+.headp a:hover{
+  color: #e12424;
+  text-decoration: none;
+}
+.each-post-desc{
+  border-radius: 8px;
+  display: flex;
+  gap: 30px;
+  border: 1px solid grey;
+}
+.item-container {
+  text-align: left;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 5px;
+}
+.item-details{
+  text-align: left;
+}
+.item-details p{
+  font-size: 20px;
+}
+
+.item-details h2 {
+  margin-bottom: 10px;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-container {
+  margin-right: 20px;
+}
+
+.quantity-container label {
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  padding: 10px 80px;
+  background-color:#ee4747;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #e12424;;
+}
+.save-btn{
+  padding: 5px 10px;  
+  background-color: #ee4747;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.save-btn:hover{
+  cursor: pointer;
+  background-color: #e12424;;
+}
+.cut-price{
+  font-size: 20px;
+  text-decoration: line-through;
+}
+.original-price{
+  font-size: 20px;
+}
+.info-div{
+  color: gray;
+}
+.content-post{
+  color: black;
+  margin-bottom: 30px;
+}
